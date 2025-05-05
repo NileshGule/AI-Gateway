@@ -5,7 +5,7 @@ variable "resource_group_name" {
 
 variable "resource_group_location" {
   type        = string
-  default     = "westeurope"
+  default     = "australiasoutheast"
 }
 
 variable "openai_backend_pool_name" {
@@ -17,19 +17,19 @@ variable "openai_config" {
   default = {
     openai-uks = {
       name     = "openai1",
-      location = "uksouth",
+      location = "australiaeast",
       priority = 1,
       weight   = 100
     },
     openai-swc = {
       name     = "openai2",
-      location = "swedencentral",
+      location = "eastus",
       priority = 2,
       weight   = 50
     },
     openai-frc = {
       name     = "openai3",
-      location = "francecentral",
+      location = "southindia",
       priority = 2,
       weight   = 50
     }

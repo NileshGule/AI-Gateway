@@ -1,6 +1,6 @@
 
 resource_group_name     = "lab-backend-pool-load-balancing-tf"
-resource_group_location = "westeurope"
+resource_group_location = "australiasoutheast"
 apim_sku                = "BasicV2"
 openai_deployment_name  = "gpt-4o"
 openai_model_name       = "gpt-4o"
@@ -10,19 +10,19 @@ openai_api_version      = "2024-10-21"
 openai_config           = {
     openai-uks = {
       name     = "openai1",
-      location = "uksouth",
+      location = "australiaeast",
       priority = 1,
       weight   = 100
     },
     openai-swc = {
       name     = "openai2",
-      location = "swedencentral",
+      location = "eastus",
       priority = 2,
       weight   = 50
     },
     openai-frc = {
       name     = "openai3",
-      location = "francecentral",
+      location = "southindia",
       priority = 2,
       weight   = 50
     }
