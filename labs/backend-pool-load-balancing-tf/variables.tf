@@ -73,7 +73,7 @@ variable "apim_resource_name" {
 
 variable "apim_resource_location" {
   type        = string
-  default     = "westeurope" # APIM SKU StandardV2 is not yet supported in the region Sweden Central
+  default     = "asutraliaeast" 
 }
 
 variable "apim_sku" {
