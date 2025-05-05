@@ -73,7 +73,7 @@ variable "apim_resource_name" {
 
 variable "apim_resource_location" {
   type        = string
-  default     = "asutraliaeast" 
+  default     = "australiaeast" 
 }
 
 variable "apim_sku" {
