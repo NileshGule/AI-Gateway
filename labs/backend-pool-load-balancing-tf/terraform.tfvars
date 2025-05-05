@@ -1,5 +1,5 @@
 
-resource_group_name     = "lab-backend-pool-load-balancing-tf"
+resource_group_name     = "gab-melb-backend-pool-load-balancing"
 resource_group_location = "australiasoutheast"
 apim_sku                = "BasicV2"
 openai_deployment_name  = "gpt-4o"
@@ -18,13 +18,13 @@ openai_config           = {
       name     = "openai2",
       location = "eastus",
       priority = 2,
-      weight   = 50
+      weight   = 60
     },
     openai-frc = {
       name     = "openai3",
       location = "southindia",
       priority = 2,
-      weight   = 50
+      weight   = 40
     }
   }
 
